@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Verification</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Face Verification</h1>
+        <p>Upload two photos to check if they are the same person</p>
+
+        <div class="upload-section">
+            <div class="upload-box">
+                <h3>Person 1</h3>
+                <input type="file" id="image1" accept="image/*">
+                <img id="preview1" src="" alt="Preview">
+            </div>
+            <div class="upload-box">
+                <h3>Person 2</h3>
+                <input type="file" id="image2" accept="image/*">
+                <img id="preview2" src="" alt="Preview">
+            </div>
+        </div>
+
+        <button onclick="verifyFaces()">Verify Faces</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('image1').onchange = function() {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('preview1').src = e.target.result;
+                document.getElementById('preview1').style.display = 'block';
+            }
+            reader.readAsDataURL(this.files[0]);
+        }
+
+        document.getElementById('image2').onchange = function() {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('preview2').src = e.target.result;
+                document.getElementById('preview2').style.display = 'block';
+            }
+            reader.readAsDataURL(this.files[0]);
+        }
+
+        function verifyFaces() {
+            let formData = new FormData();
+            formData.append('image1', document.getElementById('image1').files[0]);
+            formData.append('image2', document.getElementById('image2').files[0]);
+
+            document.getElementById('result').innerHTML = '⏳ Verifying...';
+
+            fetch('/verify', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerHTML = data.result;
+            });
+        }
+    </script>
+</body>
+</html>
