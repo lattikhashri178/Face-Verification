@@ -33,3 +33,15 @@ To build a face verification system that can accurately compare two face images 
 3. Open browser:
    http://127.0.0.1:5000
 
+<img width="1920" height="1080" alt="Screenshot (702)" src="https://github.com/user-attachments/assets/24525a71-e781-4b1b-8d9d-7f8b986496dd" />
+<img width="1920" height="1080" alt="Screenshot (701)" src="https://github.com/user-attachments/assets/ca3dfa12-46a3-4710-bbab-a838a7afff77" />
+<img width="1920" height="1080" alt="Screenshot (700)" src="https://github.com/user-attachments/assets/826348d4-68ba-47a1-a622-d3685369d36a" />
+
+
+https://github.com/user-attachments/assets/616f7a50-bd62-47e0-9180-506d38b198da
+
+
+
+https://github.com/user-attachments/assets/549f38ab-5812-4526-a695-fec4b041a2b4
+
+<img width="832" height="291" alt="Screenshot 2026-06-16 153330" src="https://github.com/user-attachments/assets/6f0fba55-ec33-4473-bd7c-6cd5f434e689" />
