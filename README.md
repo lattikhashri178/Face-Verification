@@ -38,10 +38,10 @@ To build a face verification system that can accurately compare two face images 
 <img width="1920" height="1080" alt="Screenshot (700)" src="https://github.com/user-attachments/assets/826348d4-68ba-47a1-a622-d3685369d36a" />
 
 
-https://github.com/user-attachments/assets/616f7a50-bd62-47e0-9180-506d38b198da
+https://github.com/user-attachments/assets/ad31e944-bcd1-485a-8705-d2dd5d4996c0
 
 
 
-https://github.com/user-attachments/assets/549f38ab-5812-4526-a695-fec4b041a2b4
+https://github.com/user-attachments/assets/da46391c-1ec6-48b9-8b3b-9f75cc680fa9
 
 <img width="832" height="291" alt="Screenshot 2026-06-16 153330" src="https://github.com/user-attachments/assets/6f0fba55-ec33-4473-bd7c-6cd5f434e689" />
